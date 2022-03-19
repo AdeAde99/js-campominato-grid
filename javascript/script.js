@@ -1,18 +1,36 @@
 const arrDifficoltà = [100,81,49];
+console.log(arrDifficoltà);
+
 let i = 0;
+const playButton = document.querySelector('.btn');
+
+
 function playDiff() {
-    return i = document.getElementById('selezione').value;
+    return diff = document.getElementById('selezione').value;
 };
 
-document.addEventListener('click', playDiff);
+function play () {
+    playDiff();
+    let square;
+    const containerMain = document.querySelector('.gridContainer');
+    for(let index = 1; index <= arrDifficoltà[diff]; index++) {
+        square = document.createElement('div');
+        square.innerHTML = index;
+        square.classList.add('square');
 
-setTimeout()
+        containerMain.append(square);
+    };
 
-console = ()=> ({
+    
 
-});
-console.log(arrDifficoltà[i]);
-console.log(i);
+    console.log(arrDifficoltà[diff]);
+    console.log(diff);
+};
+
+playButton.addEventListener('click', play);
+
+
+
 
 
 
