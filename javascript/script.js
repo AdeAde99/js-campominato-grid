@@ -5,6 +5,7 @@ let i = 0;
 const playButton = document.querySelector('.btn');
 
 
+
 function playDiff() {
     return diff = document.getElementById('selezione').value;
 };
@@ -20,8 +21,6 @@ function play () {
 
         containerMain.append(square);
     };
-
-    
 
     console.log(arrDifficoltà[diff]);
     console.log(diff);
